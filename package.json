@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "NPM library demo",
   "main": "src/index.js",
+  "repository": "https://github.com/mattyao1984/npm_library_demo",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
