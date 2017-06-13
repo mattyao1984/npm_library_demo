@@ -1,0 +1,18 @@
+{
+  "name": "npm_demo",
+  "version": "1.0.0",
+  "description": "NPM library demo",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo",
+    "library"
+  ],
+  "author": "Matt Yao <mattyao1984@gmail.com> (http://myrealm.com.au/)",
+  "license": "MIT",
+  "dependencies": {
+    "unique-random-array": "^1.0.0"
+  }
+}
