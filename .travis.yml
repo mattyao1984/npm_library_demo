@@ -14,7 +14,7 @@ script:
   - npm run test
   - npm run check-coverage
 after_success:
-  - npm run report-coverage
+  - npm run report-coveraged
   - npm run semantic-release
 branches:
   except:
