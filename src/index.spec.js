@@ -3,13 +3,13 @@ import { expect } from 'chai';
 
 describe('hearthstoneSkills - all', () => {
   it('should return all data in an array of string', () => {
-    expect(hearthstoneSkills.all).to.satisfy(isArrayOfStrings);
-
-    function isArrayOfStrings(array) {
+    let isArrayOfStrings = (array) => {
       return array.every((item) => {
         return typeof item === 'string';
       });
     }
+
+    expect(hearthstoneSkills.all).to.satisfy(isArrayOfStrings);
   });
 });
 
