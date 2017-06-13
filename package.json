@@ -6,7 +6,8 @@
   "repository": "https://github.com/mattyao1984/npm_library_demo",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha src/*.spec.js -w",
+    "test": "mocha src/*.spec.js",
+    "test:watch": "mocha src/*.spec.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
