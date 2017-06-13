@@ -1,6 +1,6 @@
 {
   "name": "npm_demo_mattyao",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "NPM library demo",
   "main": "src/index.js",
   "repository": "https://github.com/mattyao1984/npm_library_demo",
