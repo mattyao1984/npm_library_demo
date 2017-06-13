@@ -1,11 +1,13 @@
 {
   "name": "npm_demo_mattyao",
-  "version": "1.1.0",
+  "version": "0.0.0-semantically-released",
   "description": "NPM library demo",
   "main": "src/index.js",
   "repository": "https://github.com/mattyao1984/npm_library_demo",
   "scripts": {
-    "test": "mocha src/*.spec.js -w"
+    "commit": "git-cz",
+    "test": "mocha src/*.spec.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "demo",
@@ -18,6 +20,12 @@
   },
   "devDependencies": {
     "chai": "^4.0.2",
-    "mocha": "^3.4.2"
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "mocha": "^3.4.2",
+    "semantic-release": "^6.3.6"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
