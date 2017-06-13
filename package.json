@@ -6,7 +6,7 @@
   "repository": "https://github.com/mattyao1984/npm_library_demo",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha src/*.spec.js",
+    "test": "istanbul cover -x *.spec.js _mocha -- -R spec src/*.spec.js",
     "test:watch": "mocha src/*.spec.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -24,6 +24,7 @@
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "ghooks": "^2.0.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
     "semantic-release": "^6.3.6"
   },
