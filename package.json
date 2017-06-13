@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "repository": "https://github.com/mattyao1984/npm_library_demo",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/*.spec.js -w"
   },
   "keywords": [
     "demo",
@@ -15,5 +15,9 @@
   "license": "MIT",
   "dependencies": {
     "unique-random-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
   }
 }
