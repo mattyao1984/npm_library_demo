@@ -16,7 +16,7 @@ let getRandomItems = (number) => {
   }
 }
 
-module.exports = {
+export default {
   all: hearthstoneSkills,
   random: getRandomItems
 }
