@@ -1,13 +1,14 @@
-var hearthstoneSkills = require('./hearthstone-skills.json');
-var uniqueRandomArray = require('unique-random-array');
-var getRandomItem = uniqueRandomArray(hearthstoneSkills);
+import hearthstoneSkills from './hearthstone-skills.json';
+import uniqueRandomArray from 'unique-random-array';
 
-var getRandomItems = function(number) {
+let getRandomItem = uniqueRandomArray(hearthstoneSkills);
+
+let getRandomItems = (number) => {
   if(number === undefined) {
     return getRandomItem();
   } else {
-    var randomSkills = [];
-    for(var i = 0; i < number; i++) {
+    let randomSkills = [];
+    for(let i = 0; i < number; i++) {
       randomSkills.push(getRandomItem());
     }
 
